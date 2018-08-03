@@ -3,15 +3,16 @@
 
 
     
-		<div class="signup-form forgot-form">
+		<div class="signup-form forgot-form" id="form-margin">
 
 	    <form action="/examples/actions/confirmation.php" method="post">
 	    				    <img src="logo.png" width="100" height="70" style="margin-left: 38%;">
 
 			<h2>CodePark</h2>
+			<div class="forgot">
 			<hr>
-			<p>	<span id="font-forget">Forgot your password?</span><br>
-				<span id="font-enter">Enter your email address to recover your password.</span>
+			<p>	<div class="font-forget"><strong>Forgot your password?</strong></div>
+				<div class="font-enter">Enter your email address to recover your password.</div>
 			</p>
 			
 	        <div class="form-group">
@@ -19,16 +20,13 @@
 			<div class="form-group">
 	        	<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
 	        </div>
-			
-	     
-	       
-			
 	        <div class="form-group">
 	            <button type="submit" class="btn btn-success btn-lg btn-block forgot-btn">Reset Password</button>
 	        </div>
-	        
+	        </div>
+	        <a href="/login" class="back-login">Back to login</a>
 	    </form>
 	    <br>
-	    <a href="/login" class="back-login">Back to login</a>
+	    
 	</div>
 				<% include ./partials/footer %>

@@ -1,7 +1,5 @@
 <% include ./partials/header %>
-
-
-
+	
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     	<div id="app" class="container">
 
@@ -33,7 +31,15 @@
 			</div>
 			<div class="or-seperator"><b>or</b></div>
 	        <div class="form-group">
-	        	
+	        <div class="name-details">	
+			<div class="form-group">
+	            <input type="name" class="form-control input-lg" id="fname" name="fname" placeholder="First Name" required="required">
+	        </div>
+	        <div class="form-group">
+	            <input type="name" class="form-control input-lg" id="lname" name="lname" placeholder="Last Name" required="required">
+	        </div>
+	        </div>
+	        <div class="details">
 			<div class="form-group">
 	        	<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
 	        </div>
@@ -45,6 +51,7 @@
 	        </div>  
 	        <div class="form-group">
 	            <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
+	        </div>
 	        </div>
 	    </form>
 	    <div class="text-center">Already have an account? <a href="/login">Login here</a></div>

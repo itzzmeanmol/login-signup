@@ -1,22 +1,47 @@
-  body {
-    
+*{
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Nunito';
     background-repeat: no-repeat;
     background-size: cover;
     background: #F0F2F0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   }
-  #font-forget{
+ #font-forget{
     font-size: 1.2em;
-
   }
-  .forgot-form{
-    margin-top: 80px !important;
+  
+  #form-margin{
+      margin: 40px auto;
   }
-  .forgot-enter{
-    font-size: 0.9em;
+  
+  #fname{
+      width: 48%;
+      float: left;
+      margin-right: 4%;
+  }
+  
+  #lname{
+      width: 48%;
+  }
+  
+  .name-details{
+      margin: auto;
+      width: 80%;
+  }
+  
+  .details{
+      width: 80% !important;
+      margin:auto;
+  }
+  
+  .font-enter{
+    font-size: 0.8em;
   }
   .forgot-password ,.back-login{
     float: right;
@@ -42,7 +67,7 @@ background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, F
     outline: none !important;
     }
   .signup-form {
-    width: 480px;
+    width: 450px;
       margin: 0 auto;
     padding: 30px 0;
   }
@@ -53,7 +78,7 @@ background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, F
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5),
                     0px 8px 13px rgba(0,0,0,0.1),
                     0px 18px 23px rgba(0,0,0,0.1);
-        padding: 40px;
+        padding: 8px 2px;
     }
   .signup-form a {
     color: #5cb85c;
@@ -80,14 +105,13 @@ background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, F
   .signup-btn {
     text-align: center;
     border-color: #5cb85c;
-    
   }
   .signup-btn:hover {
     background: #5cb85c;
     opacity: 0.8;
   }
     .or-seperator {
-        margin: 50px 0 15px;
+        margin: 35px 0 20px;
         text-align: center;
         border-top: 1px solid #e0e0e0;
     }
@@ -113,7 +137,6 @@ background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, F
     border-radius: 50px;
     font-weight: normal;
     border: none;
- 
     } 
   .social-btn .btn:first-child {
     margin-left: 0;
@@ -135,11 +158,32 @@ background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, F
     margin: 3px 10px;
     font-size: 20px;
   }
+  
+  .btn-block{
+      width: 80% !important;
+      margin: auto;
+  }
+  
   ::-webkit-input-placeholder{
     color:#BDBDBD !important;
   }
 
-  .forgot-btn{
+.forgot-btn{
     background-color: #0097a7 !important;
     border:none;
-  }
+}
+
+.navbar{
+    padding: 0px !important;
+}
+.login{
+    width:80%;
+    margin: auto;
+}
+
+.forgot{
+    width:80%;
+    margin:auto;
+    font-size: 16px;
+    
+}
