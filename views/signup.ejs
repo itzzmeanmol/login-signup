@@ -1,6 +1,6 @@
 <% include ./partials/header %>
 	
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     	<div id="app" class="container">
 
 <a class="navbar-brand" href="#"> <img src="logo.png" width="35" height="30"> CodePark </a> 
@@ -21,8 +21,13 @@
         </div>
 
     </nav>
-
-		<div class="signup-form">
+    
+    
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			 
+				<div class="signup-form">
 	    <form action="/examples/actions/confirmation.php" method="post">
 			<h2>Create an Account</h2>
 			<div class="social-btn text-center">
@@ -55,5 +60,9 @@
 	        </div>
 	    </form>
 	    <div class="text-center">Already have an account? <a href="/login">Login here</a></div>
+	</div>
+	</div>
+		</div>
+	</div>
 	</div>
 				<% include ./partials/footer %>
